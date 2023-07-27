@@ -1,5 +1,5 @@
   // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+  import { initializeApp ,} from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
   import { getAuth  } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
   // import { getFirestore  } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firstore.js";
   import { getFirestore   } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
@@ -21,6 +21,7 @@ import {  getStorage, ref, uploadBytes} from "https://www.gstatic.com/firebasejs
   };
 
   // Initialize Firebase
+// export const firebaseApp= FirebaseApp(app)
 export  const app = initializeApp(firebaseConfig);
 export  const auth = getAuth (app);
 export  const db = getFirestore(app);
